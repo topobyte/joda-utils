@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <name>Joda Utils</name>
+  <description>Joda Utils provides utilities for working with Joda-Time.</description>
+  <url>https://github.com/topobyte/joda-utils</url>
+</project>
