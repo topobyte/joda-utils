@@ -56,4 +56,10 @@ public class MonthIterator implements Iterator<YearMonth>
 		return current;
 	}
 
+	@Override
+	public void remove()
+	{
+		throw new IllegalArgumentException("remove is not supported");
+	}
+
 }
