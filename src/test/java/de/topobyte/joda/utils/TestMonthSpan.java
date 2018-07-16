@@ -56,16 +56,26 @@ public class TestMonthSpan
 				new YearMonth(2016, 1));
 		Assert.assertTrue(span3.isEmpty());
 		Assert.assertEquals(0, span3.length());
+		Assert.assertFalse(span3.contains(new YearMonth(2015, 12)));
+		Assert.assertFalse(span3.contains(new YearMonth(2016, 1)));
+		Assert.assertFalse(span3.contains(new YearMonth(2016, 2)));
 
 		MonthSpan span4 = new MonthSpan(new YearMonth(2016, 1),
 				new YearMonth(2016, 2));
 		Assert.assertFalse(span4.isEmpty());
 		Assert.assertEquals(1, span4.length());
+		Assert.assertFalse(span4.contains(new YearMonth(2015, 12)));
+		Assert.assertTrue(span4.contains(new YearMonth(2016, 1)));
+		Assert.assertFalse(span4.contains(new YearMonth(2016, 2)));
 
 		MonthSpan span5 = new MonthSpan(new YearMonth(2016, 1),
 				new YearMonth(2016, 3));
 		Assert.assertFalse(span5.isEmpty());
 		Assert.assertEquals(2, span5.length());
+		Assert.assertFalse(span5.contains(new YearMonth(2015, 12)));
+		Assert.assertTrue(span5.contains(new YearMonth(2016, 1)));
+		Assert.assertTrue(span5.contains(new YearMonth(2016, 2)));
+		Assert.assertFalse(span5.contains(new YearMonth(2016, 3)));
 	}
 
 	@Test
