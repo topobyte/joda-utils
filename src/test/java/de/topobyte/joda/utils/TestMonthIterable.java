@@ -92,7 +92,7 @@ public class TestMonthIterable
 		test(iterable, start, last);
 	}
 
-	public static void test(Iterable<YearMonth> iterable, YearMonth fist,
+	public static void test(Iterable<YearMonth> iterable, YearMonth first,
 			YearMonth last)
 	{
 		YearMonth firstReached = null;
@@ -113,7 +113,7 @@ public class TestMonthIterable
 		}
 
 		// Make sure we got the expected first and last value
-		Assert.assertEquals(fist, firstReached);
+		Assert.assertEquals(first, firstReached);
 		Assert.assertEquals(last, lastReached);
 	}
 

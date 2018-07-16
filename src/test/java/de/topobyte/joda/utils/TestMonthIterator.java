@@ -94,7 +94,7 @@ public class TestMonthIterator
 		test(iterator, start, last);
 	}
 
-	public static void test(Iterator<YearMonth> iterator, YearMonth fist,
+	public static void test(Iterator<YearMonth> iterator, YearMonth first,
 			YearMonth last)
 	{
 		YearMonth firstReached = null;
@@ -116,7 +116,7 @@ public class TestMonthIterator
 		}
 
 		// Make sure we got the expected first and last value
-		Assert.assertEquals(fist, firstReached);
+		Assert.assertEquals(first, firstReached);
 		Assert.assertEquals(last, lastReached);
 	}
 
