@@ -198,7 +198,8 @@ public class TestMonthSpan
 		if (numMonths == 0) {
 			Assert.assertFalse(iterable.iterator().hasNext());
 		} else {
-			TestMonthIterable.test(iterable, span.getStart(), span.getEnd());
+			TestMonthIterable.test(iterable, span.getStart(),
+					span.getEnd().minusMonths(1));
 		}
 	}
 

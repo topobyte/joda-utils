@@ -124,7 +124,7 @@ public class MonthSpan
 		if (isEmpty()) {
 			return new MonthIterable(limitLower, limitLower);
 		}
-		return new MonthIterable(limitLower, limitUpper.plusMonths(1));
+		return new MonthIterable(limitLower, limitUpper);
 	}
 
 }
